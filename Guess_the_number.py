@@ -4,11 +4,10 @@ g = 47
 print('\nYou have a total of 10 chances.\n Type "rules" to know about rules.')
 
 while True:
+
     if n == 0:
         print('\n      ------GAME-OVER------')
         break
-
-    n -= 1
 
     x = input('\n  Type the number you guessed: ')
 
@@ -25,9 +24,12 @@ while True:
             '5. Good Luck!'
         )
 
-    elif int(x) == g and n == 9:
+    elif int(x) == g and n == 10:
         print('Bingo!! Correct guess in the first go!')
+        break
 
+    elif int(x) == g:
+        print('\n      --------YOU-WON--------')
         break
 
     elif int(x) > g:
@@ -37,3 +39,5 @@ while True:
     elif int(x) < g:
         print(' The number you gessed is smaller.')
         print('   Chances remaining: ' + str(n))
+
+    n -= 1

@@ -1,3 +1,3 @@
 word = input('Write your word: ')
 
-print(word[::-1])
+print(word[::-1])	

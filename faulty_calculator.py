@@ -5,5 +5,3 @@ o = input(
 )
 x = int(input("Your first number to calculate: "))
 y = int(input("Your secound number: "))
-
-# if 
