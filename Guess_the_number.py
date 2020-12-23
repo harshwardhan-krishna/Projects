@@ -1,3 +1,5 @@
+#There could be a bit problem in sorting the functions
+
 n = 10
 g = 47
 
@@ -35,9 +37,11 @@ while True:
     elif int(x) > g:
         print(' The number you guessed is greater.')
         print('   Chances remaining: ' + str(n))
-    
+
     elif int(x) < g:
         print(' The number you gessed is smaller.')
         print('   Chances remaining: ' + str(n))
 
     n -= 1
+
+#Thats it the end of this program
